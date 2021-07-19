@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#tabs {
+  width: 400px;
+  border: 1px solid #ccc;
+}
+#tabs ul {
+  display: flex;
+}
+
+/* 기본상태 */
+#tabs ul li{
+  flex: 1;
+}
+
+/* 선택시 */
+#tabs ul li.active a{
+  background: #333;
+  color: #fff;
+}    
+
+#tabs ul li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  background: #ddd;
+  color: #333;
+}
+
+/*
+#tab1, #tab2 {
+  padding: 20px;
+}
+*/
+.tab {
+  padding: 20px;
+}
+
+/*
+#tab1 {} 
+#tab2 {
+  display: none;
+}
+*/
+.tab {
+  display: none;
+}
+.tab:first-of-type {
+  display: block;
+}
